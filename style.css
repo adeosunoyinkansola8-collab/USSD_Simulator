@@ -1,0 +1,128 @@
+:root {
+    --font-Outfit:"Outfit",sans-serif;
+    --background-color: #0f172a;
+    --accent-color: #16a34a;
+    --danger-color: #dc2626;
+    --screen-color: #f1f5f9;
+    --phone-color: #1e293b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-Outfit);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: var(--screen-color);
+}
+
+.phone {
+    width: 320px;
+    border: 3px solid #334155;
+    border-radius: 20px;
+    padding: 20px 16px 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    background-color: var(--phone-color);
+}
+
+.notch {
+    width: 90px;
+    height: 8px;
+    margin: 0 auto 16px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+}
+
+.screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: #334155;
+    border-radius: 12px;
+    min-height: 300px;
+}
+
+.dialog {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--screen-color);
+    color: var(--background-color);
+    border-radius: 12px;
+}
+
+.title {
+    margin: 0 0 10px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #64748b;
+    letter-spacing: 0.5px;
+}
+
+.message {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    white-space: pre-line;
+}
+
+.controls {
+    margin-top: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #475569;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    color: white;
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--screen-color);
+}
+
+input:disabled {
+    opacity: 0.4;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.btn {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.send {
+    background-color: var(--accent-color);
+}
+
+.cancel {
+    background-color: var(--danger-color);
+}
+
+.btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
